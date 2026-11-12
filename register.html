@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register | Creative Workshops</title>
+    <meta name="description"
+        content="Book creative workshops in Riyadh: pottery, candle making, perfume, painting, matcha, flower arranging and more. Compare studios, prices and reviews, with group offers.">
+    <meta name="keywords"
+        content="workshops Riyadh, pottery workshop Riyadh, candle making Riyadh, perfume workshop, matcha workshop, flower arranging, ورش الرياض, ورشة فخار, ورشة شموع, ورشة عطور">
+    <meta property="og:title" content="Creative Workshops — Riyadh">
+    <meta property="og:description"
+        content="Turn creativity into moments. Book and compare hands-on workshops across Riyadh.">
+    <meta property="og:image" content="assets/places/8.jpg">
+    <meta name="theme-color" content="#435744">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Creative Workshops","areaServed":"Riyadh, Saudi Arabia","sameAs":["https://www.instagram.com/creative_workshops.sa/"]}</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="brand">Creative<span>❧</span><br>Workshops</div>
+            <nav><button onclick="go('home')">Home</button><button onclick="go('workshops')">Workshops</button><button
+                    onclick="go('categories')">Categories</button><button onclick="go('about')">About Us</button><button
+                    onclick="go('contact')">Contact Us</button></nav>
+            <div class="icons"><button title="Search" onclick="go('search')">⌕</button><button title="Wishlist"
+                    onclick="protectedGo('wishlist')">♡</button><button title="Cart" class="cart-btn"
+                    onclick="protectedGo('cart')">🛒<span id="cart-count"
+                        class="cart-count hide">0</span></button><button title="Profile"
+                    onclick="protectedGo('profile')">♙</button></div>
+        </div>
+    </header>
+    <main class="wrap" id="app" aria-live="polite"></main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="brand">Creative<span>❧</span> Workshops</div>
+                <p>Where creativity becomes a memory.</p>
+                <p>📍 Riyadh, Saudi Arabia<br>✉ <a
+                        href="mailto:creativeworkshops8@gmail.com">creativeworkshops8@gmail.com</a><br>📞 +966 50 000
+                    0000</p>
+                <p><a href="https://www.instagram.com/creative_workshops.sa/" target="_blank" rel="noopener">Instagram
+                        @creative_workshops.sa</a></p>
+            </div>
+            <div><b>Explore</b><button class="link" onclick="go('workshops')">All workshops</button><button class="link"
+                    onclick="go('categories')">Categories</button><button class="link" onclick="go('partner')">Partner
+                    with us</button>
+                    <button class="link" onclick="go('about')">About us</button></div>
+            <div><b>Policies</b><button class="link" onclick="go('privacy')">Privacy policy</button><button class="link"
+                    onclick="go('accessibility')">Accessibility</button><button class="link"
+                    onclick="go('contact')">Contact us</button></div>
+            <div class="newsletter"><b>Get new workshops & offers</b>
+                <p class="small">Join our e-mail list and get <b>10% off</b> your first booking.</p>
+                <form onsubmit="subscribeNews(event)"><input class="field" type="email" name="email" required
+                        placeholder="Your e-mail" aria-label="Your e-mail"><label class="consent"><input type="checkbox"
+                            name="ok" required> I agree to receive marketing e-mails. Unsubscribe
+                        anytime.</label><button class="btn">Subscribe</button></form>
+                <div id="news-msg"></div>
+            </div>
+        </div><small>© 2026 Creative Workshops · Website prototype</small>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
